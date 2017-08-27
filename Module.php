@@ -1,12 +1,17 @@
 <?php
-namespace yuncms\notifcation;
+/**
+ * @link http://www.tintsoft.com/
+ * @copyright Copyright (c) 2012 TintSoft Technology Co. Ltd.
+ * @license http://www.tintsoft.com/license/
+ */
 
+namespace yuncms\notification;
 
 use Yii;
 
 /**
  * Class Module
- * @package yuncms\notifcation
+ * @package yuncms\notification
  */
 class Module extends \yii\base\Module
 {
@@ -25,8 +30,8 @@ class Module extends \yii\base\Module
      */
     public function registerTranslations()
     {
-        if (!isset(Yii::$app->i18n->translations['notifcation*'])) {
-            Yii::$app->i18n->translations['notifcation*'] = [
+        if (!isset(Yii::$app->i18n->translations['notification*'])) {
+            Yii::$app->i18n->translations['notification*'] = [
                 'class' => 'yii\i18n\PhpMessageSource',
                 'sourceLanguage' => 'en-US',
                 'basePath' => __DIR__ . '/messages',

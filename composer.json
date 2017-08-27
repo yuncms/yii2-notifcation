@@ -1,8 +1,8 @@
 {
-  "name": "yuncms/yii2-notifcation",
-  "description": "notifcation",
+  "name": "yuncms/yii2-notification",
+  "description": "notification",
   "keywords": [
-    "notifcation","yii2","yii2-module"
+    "notification","yii2","yii2-module"
   ],
   "type": "yii2-extension",
   "license": "MIT",
@@ -21,7 +21,7 @@
       "helpers.php"
     ],
     "psr-4": {
-      "yuncms\\notifcation\\": ""
+      "yuncms\\notification\\": ""
     }
   }
 }

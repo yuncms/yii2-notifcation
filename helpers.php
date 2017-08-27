@@ -13,7 +13,7 @@ if (!function_exists('notify')) {
      * @param int $refer_id
      * @return bool
      */
-    public function notify($fromUserId, $toUserId, $type, $subject = '', $model_id = 0, $content = '', $referType = '', $refer_id = 0)
+    function notify($fromUserId, $toUserId, $type, $subject = '', $model_id = 0, $content = '', $referType = '', $refer_id = 0)
     {
         /*不能自己给自己发通知*/
         if ($fromUserId == $toUserId) {
