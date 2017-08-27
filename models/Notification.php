@@ -4,7 +4,7 @@
  * @copyright Copyright (c) 2012 TintSoft Technology Co. Ltd.
  * @license http://www.tintsoft.com/license/
  */
-namespace yuncms\notifcation\models;
+namespace yuncms\notification\models;
 
 use Yii;
 use yii\db\ActiveRecord;

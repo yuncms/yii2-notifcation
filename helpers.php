@@ -25,7 +25,7 @@ if (!function_exists('notify')) {
         }
 
         try {
-            $notify = \yuncms\notifcation\models\Notification::create([
+            $notify = \yuncms\notification\models\Notification::create([
                 'user_id' => $fromUserId,
                 'to_user_id' => $toUserId,
                 'type' => $type,
@@ -34,7 +34,7 @@ if (!function_exists('notify')) {
                 'content' => strip_tags($content),
                 'refer_model' => $referType,
                 'refer_model_id' => $refer_id,
-                'status' => Notification::STATUS_UNREAD
+                'status' => \yuncms\notification\models\Notification::STATUS_UNREAD
             ]);
             return $notify != false;
         } catch (\Exception $e) {
