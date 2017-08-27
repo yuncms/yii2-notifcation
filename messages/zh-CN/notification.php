@@ -17,17 +17,17 @@
  * NOTE: this file must be saved in UTF-8 encoding.
  */
 return [
-    'All marked as read' => '',
-    'Notice' => '',
-    'Notifications' => '',
-    'Successful operation.' => '',
-    'accepted your answer' => '',
-    'answered the question' => '',
-    'commented on the question' => '',
-    'follow on you' => '',
+    'All marked as read' => '全部标记为已读',
+    'Notice' => '通知提醒',
+    'Notifications' => '通知提醒',
+    'accepted your answer' => '采纳了你的答案',
+    'answered the question' => '回答了问题',
+    'commented on the question' => '评论了问题',
+    'follow on you' => '关注了你',
     'in your answer' => '',
     'in your comment' => '',
-    'invited you to answer' => '',
-    'is concerned about the problem' => '',
+    'invited you to answer' => '邀请你回答',
+    'is concerned about the problem' => '关注了问题',
     'mentions you' => '',
+    'Successful operation.' => '操作成功',
 ];

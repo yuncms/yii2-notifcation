@@ -68,7 +68,7 @@ class NotificationController extends Controller
     public function actionReadAll()
     {
         Notification::setReadAll(Yii::$app->user->id);
-        Yii::$app->session->setFlash('success', Yii::t('notifcation', 'Successful operation.'));
+        Yii::$app->session->setFlash('success', Yii::t('notification', 'Successful operation.'));
         return $this->redirect(['index']);
     }
 

@@ -1,6 +1,6 @@
 <?php
 
-namespace yuncms\notifcation\migrations;
+namespace yuncms\notification\migrations;
 
 use yii\db\Migration;
 
