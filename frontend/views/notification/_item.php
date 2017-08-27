@@ -2,7 +2,7 @@
 
 use yii\helpers\Url;
 use yii\helpers\Html;
-use yuncms\notifcation\models\Notification;
+use yuncms\notification\models\Notification;
 
 /** @var string $typeText */
 $typeText = $model->typeText;

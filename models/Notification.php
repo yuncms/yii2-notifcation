@@ -41,7 +41,7 @@ class Notification extends ActiveRecord
      */
     public static function tableName()
     {
-        return '{{%notifcation}}';
+        return '{{%notification}}';
     }
 
     /**
@@ -97,22 +97,22 @@ class Notification extends ActiveRecord
     {
         switch ($this->type) {
             case 'follow_user':
-                return Yii::t('notifcation', 'follow on you');
+                return Yii::t('notification', 'follow on you');
                 break;
             case 'answer_question':
-                return Yii::t('notifcation', 'answered the question');
+                return Yii::t('notification', 'answered the question');
                 break;
             case 'follow_question':
-                return Yii::t('notifcation', 'is concerned about the problem');
+                return Yii::t('notification', 'is concerned about the problem');
                 break;
             case 'comment_question':
-                return Yii::t('notifcation', 'commented on the question');
+                return Yii::t('notification', 'commented on the question');
                 break;
             case 'invite_answer':
-                return Yii::t('notifcation', 'invited you to answer');
+                return Yii::t('notification', 'invited you to answer');
                 break;
             case 'adopt_answer':
-                return Yii::t('notifcation', 'accepted your answer');
+                return Yii::t('notification', 'accepted your answer');
                 break;
             default:
                 return null;

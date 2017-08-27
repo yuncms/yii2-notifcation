@@ -5,9 +5,9 @@ namespace yuncms\notifcation\migrations;
 use yii\db\Migration;
 
 /**
- * Class M170827080339Create_notifcation_table
+ * Class M170827080339Create_notification_table
  */
-class M170827080339Create_notifcation_table extends Migration
+class M170827080339Create_notification_table extends Migration
 {
     /**
      * @inheritdoc
