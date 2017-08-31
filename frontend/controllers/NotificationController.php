@@ -4,6 +4,7 @@
  * @copyright Copyright (c) 2012 TintSoft Technology Co. Ltd.
  * @license http://www.tintsoft.com/license/
  */
+
 namespace yuncms\notification\frontend\controllers;
 
 use Yii;
@@ -41,7 +42,7 @@ class NotificationController extends Controller
                     [
                         'allow' => true,
                         'actions' => ['unread-notifications'],
-                        'roles' => ['@']
+                        'roles' => ['@', '?']
                     ],
                 ],
             ],
@@ -79,10 +80,13 @@ class NotificationController extends Controller
     public function actionUnreadNotifications()
     {
         Yii::$app->response->format = Response::FORMAT_JSON;
-        $total = Notification::getDb()->cache(function ($db) {
+        if (Yii::$app->user->isGuest) {
+            $total = 0;
+        } else {
+            $total = Notification::getDb()->cache(function ($db) {
                 return Notification::find()->where(['to_user_id' => Yii::$app->user->id, 'status' => Notification::STATUS_UNREAD])->count();
             }, 60);
-            return ['total' => $total];
-
+        }
+        return ['total' => $total];
     }
 }
