@@ -2,7 +2,9 @@
   "name": "yuncms/yii2-notification",
   "description": "notification",
   "keywords": [
-    "notification","yii2","yii2-module"
+    "notification",
+    "yii2",
+    "yii2-module"
   ],
   "type": "yii2-extension",
   "license": "MIT",
@@ -29,11 +31,11 @@
       "name": "notification",
       "i18n": {
         "class": "yii\\i18n\\PhpMessageSource",
+        "sourceLanguage": "en-US",
         "basePath": "@yuncms/notification/message"
       },
       "migrationNamespace": "yuncms\\notification\\migrations",
       "backend": {
-
       },
       "frontend": {
         "class": "yuncms\\notification\\frontend\\Module"
