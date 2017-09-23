@@ -31,7 +31,7 @@
         "class": "yii\\i18n\\PhpMessageSource",
         "basePath": "@yuncms/notification/message"
       },
-      "migrationNamespace": "@yuncms/notification/migrations",
+      "migrationNamespace": "yuncms/notification/migrations",
       "backend": {
 
       },
