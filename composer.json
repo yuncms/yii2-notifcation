@@ -32,7 +32,7 @@
       "i18n": {
         "class": "yii\\i18n\\PhpMessageSource",
         "sourceLanguage": "en-US",
-        "basePath": "@yuncms/notification/message"
+        "basePath": "@yuncms/notification/messages"
       },
       "migrationNamespace": "yuncms\\notification\\migrations",
       "backend": {
