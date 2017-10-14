@@ -22,8 +22,8 @@ class M170827080339Create_notification_table extends Migration
 
         $this->createTable('{{%notification}}', [
             'id' => $this->primaryKey(),
-            'user_id' => $this->integer(),
-            'to_user_id' => $this->integer(),
+            'user_id' => $this->integer()->unsigned(),
+            'to_user_id' => $this->integer()->unsigned(),
             'type' => $this->string(),
             'subject' => $this->string(),
             'model_id' => $this->integer(),
